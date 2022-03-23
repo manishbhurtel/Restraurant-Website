@@ -1,0 +1,683 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* CSS of the homepage starts from here */
+#homepage{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/realroast3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    cursor:pointer;
+    font-weight:700;
+    color:rgb(252, 90, 90);
+    position: absolute;
+    top:1%;
+    left:3%;
+    transform: translate(-10%,-10%);
+    line-height: 8%;
+}
+.logo img{
+    height:5rem;
+    width:5rem;
+}
+.navbar{
+    width:100vw;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.navbar::after{
+    content: "";
+    position: absolute;
+    width: 80vw;
+    background-color:red;
+    height:2px;
+    top:115%;
+}
+.content{
+    width:60%;
+}
+.content ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    font-size:1.1rem;
+    margin-top:1%;
+}
+.content ul li{
+    list-style-type: none;
+    cursor: pointer;
+    font-weight:550;
+    color:rgb(255, 255, 255);
+    line-height: 10%; 
+    font-weight:600;
+    /* position: relative; */
+}
+.content ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight:550;
+    color:rgb(255, 255, 255);
+    line-height: 8%; 
+    font-weight:600;
+    position: relative;
+}
+.content ul li a::after{
+    content:"";
+    position: absolute;
+    background-color: red;
+    height:3px;
+    width:0%;
+    left:0;
+    bottom:-0.4rem;
+    transition: 0.3s ease-in-out;
+}
+.content ul li a:hover::after{
+    content:"";
+    position: absolute;
+    background-color: red;
+    height:3px;
+    width:100%;
+    left:0;
+    bottom:-0.4rem;
+}
+.centerpart{
+    text-align:center;
+}
+.title{
+    font-size:2.6rem;
+    font-weight:600;
+    color:rgb(255, 255, 255);
+    margin-top:4%;
+}
+.image img{
+    height: 28rem;
+    width:38rem;
+    position: absolute;
+    top:28%;
+    left:0.2%;
+}
+.button button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:4rem;
+    width:14rem;
+    font-size:1.6rem;
+    border-radius:20px;
+    cursor:pointer;
+    color:white;
+    background-color: rgb(252, 90, 90);
+    color:rgb(255, 255, 255);
+    border: none;
+}
+.button button:hover{
+    transition: 0.3s  ease-in-out;
+    border:hidden;
+    background-color: rgb(182, 0, 0);
+}
+.uparrow{
+    position:absolute;
+    font-size:2.2rem;
+    color:white;
+    bottom:3%;
+    cursor:pointer;
+    left:2%;
+    transition: 0.9s ease;
+    position: fixed;
+}
+.uparrow:hover{
+    color:aqua
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS of the servicepage starts from here */
+#servicepage{
+    height:100vh;
+    width:100vw;
+    background-image: url("images/service3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.boxes .header_main{
+    text-align: center;
+    font-size:2.5rem;
+    color:white;
+    text-decoration: underline;
+}
+.boxes .box1{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(36, 36, 36);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+    top:11%;
+    left:6%;
+    cursor:pointer;
+}
+.box1 .headsection{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box1 .parasection{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+
+.boxes .box2{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(27, 27, 27);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+     top:11%;
+     left:50%;
+     transform: translate(-50%,0%);
+     cursor:pointer;
+}
+.box2 .headsection2{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection2::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box2 .parasection2{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+
+
+.boxes .box3{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(36, 36, 36);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+    top:11%;
+    right:6%;
+    cursor:pointer;
+}
+.box3 .headsection3{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection3::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box3 .parasection3{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+
+
+
+.boxes .box4{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(36, 36, 36);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+    bottom:7.5%;
+    cursor:pointer;
+    left:6%;
+}
+.box4 .headsection4{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection4::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box4 .parasection4{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+
+
+
+.boxes .box5{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(36, 36, 36);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+    bottom:7.5%;
+    left:50%;
+    transform: translate(-50%,0%);
+    cursor:pointer;
+}
+.box5 .headsection5{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection5::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box5 .parasection5{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+.boxes .box6{
+    height:16rem;
+    width:21rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 14px rgb(36, 36, 36);
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    color:white;
+    position: absolute;
+    bottom:7.5%;
+    right:6%;
+    cursor:pointer;
+}
+.box6 .headsection6{
+    font-size:1.8rem;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.headsection6::after{
+    background-color: rgb(85, 85, 85);
+    height: 2px;
+    width:80%;
+    content:"";
+    position: absolute;
+    left:9.5%;
+    bottom:0;
+    text-align:center;
+}
+.box6 .parasection6{
+    font-size:1.1rem;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS of the aboutpage starts from here */
+#aboutpage{
+    height:100vh;
+    width:100vw;
+    background-image: url("images/oopsques.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.abouthead{
+    font-size:2rem;
+    color:whitesmoke;
+    text-align:center;
+}
+.abouthead{
+    position: relative;
+}
+.abouthead::after{
+    background-color: beige;
+    height:2px;
+    width:40%;
+    text-align:center;
+    position: absolute;
+    content: "";
+    left:30%;
+    bottom:6px;
+}
+
+
+.card1{
+    height:400px;
+    width: 270px;;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform: translate(-10%,-50%);
+    text-align:center;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.aboutimg1 img{
+    height:200px;
+    width:270px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+h1{
+    position: relative;
+}
+h1::after{
+    background-color: beige;
+    height:2px;
+    width:80%;
+    text-align:center;
+    position: absolute;
+    content: "";
+    left:10%;
+    bottom:6px;
+}
+
+
+
+
+
+
+.card2{
+    height:400px;
+    width: 270px;;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.aboutimg2 img{
+    height:200px;
+    width:270px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+h1{
+    position: relative;
+}
+h1::after{
+    background-color: beige;
+    height:2px;
+    width:80%;
+    text-align:center;
+    position: absolute;
+    content: "";
+    left:10%;
+    bottom:6px;
+}
+
+
+
+.card3{
+    height:400px;
+    width: 270px;;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0);
+    position:absolute;
+    top:50%;
+    right:8%;
+    transform: translate(-10%,-50%);
+    text-align:center;
+    color:rgb(0, 0, 0);
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.aboutimg3 img{
+    height:200px;
+    width:270px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+h1{
+    position: relative;
+}
+h1::after{
+    background-color: beige;
+    height:2px;
+    width:80%;
+    text-align:center;
+    position: absolute;
+    content: "";
+    left:10%;
+    bottom:6px;
+}
+
+
+
+
+
+/* CSS of the contactpage starts from here */
+#contactpage{
+    height:100vh;
+    width:100vw;
+    background-image: url("images/realphone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main_form{
+    height:550px;
+    width:800px;
+    color:white;
+    font-size:1.5rem;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top:14%;
+    left:50%;
+    transform: translate(-50%,-0%);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(194, 194, 194, 0.1);
+    box-shadow: 0px 0px 10px black;
+}
+
+#main_name,#main_email,#main_password,#main_number{
+    outline:none;
+    font-size: 1.3rem;
+    padding-left:40px;
+    background-color: transparent;
+    margin-top:5%;
+    position: relative;
+    border: 2px solid rgb(255, 0, 212);
+    margin-left:3%;
+}
+#main_submit,#main_reset{
+    outline:none;
+    border-radius: 8px;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+label{
+    margin-left:2%;
+}
+input[type="submit"]{
+
+    border:3px solid rgb(255, 0, 212);
+    height:50px;
+    width:120px;
+    font-size:1.3rem;
+    outline:none;
+    font-weight: 600;
+    background-color: transparent;
+    cursor:pointer;
+    color:white;
+}
+#main_submit:hover{
+    background-color: rgb(255, 0, 212);
+    border:none;
+    transition: 0.5s ease;
+}
+input[type="reset"]{
+    margin-top:10%;
+    border:3px solid rgb(255, 0, 212);
+    height:50px;
+    width:120px;
+    font-size:1.3rem;
+    outline:none;
+    font-weight: 600;
+    background-color: transparent;
+    cursor:pointer;
+    color:white;
+}
+#main_reset:hover{
+    background-color: rgb(255, 0, 212);
+    border:none;
+    transition: 0.5s ease;
+}
+#main_name{
+    border-bottom: 2px solid rgb(255, 0, 212);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    width:60%;
+}
+#main_email{
+    border-bottom: 2px solid rgb(255, 0, 212);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    width:60%;
+}
+#main_password{
+    border-bottom: 2px solid rgb(255, 0, 212);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    width:60%;
+}
+#main_number{
+    border-bottom: 3px solid rgb(255, 0, 212);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    width:60%;
+}
+
